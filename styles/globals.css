@@ -1,9 +1,18 @@
 @font-face {
   font-family: "Vazir";
-  src: url("/fonts/vazir.eot"),
-    url("/fonts/vazir.ttf"),
-    url("/fonts/vazir.woff"),
-    url("/fonts/vazir.woff2");
+  src: url("/fonts/vazir/Vazir-Regular-FD.eot"),
+    url("/fonts/vazir/Vazir-Regular-FD.ttf"),
+    url("/fonts/vazir/Vazir-Regular-FD.woff"),
+    url("/fonts/vazir/Vazir-Regular-FD.woff2");
+}
+@font-face {
+  font-family: "bangers";
+  src: url("/fonts/bangers/Bangers-Regular.ttf");
+}
+:root{
+  --primary-color :#222831; 
+  --secondary-color : #ffbe33;
+  --white-color : #fff;
 }
 *{
   padding: 0;
@@ -20,6 +29,13 @@ html{
   scroll-behavior: smooth;
 }
 body{
+  direction: rtl;
   font-size : 1.8rem;
-  font-family : "Vazir";
+  font-family : "Vazir" , "bangers";
+}
+ul{
+  list-style:none;
+}
+a{
+  text-decoration : none;
 }

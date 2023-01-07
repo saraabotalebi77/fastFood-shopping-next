@@ -1,0 +1,100 @@
+.header{
+    width : 100%;
+    padding-right : 1rem;
+    padding-left : 1rem;
+    background-color: var(--primary-color);
+    position : fixed;
+    top : 0;
+}
+.navbar{
+    width : 85%;
+    margin : auto;
+    display: flex;
+    justify-content: space-between;  
+}
+.navbar_logo{
+    font-family: "bangers";
+    font-size : 4rem;
+    color : var(--white-color);
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+}
+.navbar_menu{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap : 5rem;
+    position: relative;
+}
+.main_menu{
+    margin-left : 12rem;
+    display: flex;
+    align-items: center;
+    gap : 3rem;
+}
+.list_item_main_menu>a{
+    color : var(--white-color);
+    font-size : 1.5rem;
+    cursor : pointer;
+    transition: color 0.4s;
+}
+.list_item_main_menu>a:hover{
+    color : var(--secondary-color)
+}
+
+.login_order_menu{
+    position: absolute;
+    left : 0;
+    bottom : 0;
+    top : 0;
+    display: flex;
+    align-items: center;
+    gap : 1rem;
+}
+.list_item_login_order_menu>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap : 0.5rem;
+    font-size : 1.5rem;
+    color : var(--white-color)
+}
+.list_item_login_order_menu:first-child>a>div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.list_item_login_order_menu:first-child>a>span{
+    display: none;
+}
+.BsCardFill_icon{
+    font-size: 2.5rem;
+}
+.list_item_login_order_menu:last-child>a{
+    background-color: var(--secondary-color);
+    border-radius : 1.5rem;
+    padding : 0.2rem 0.8rem;
+    transform : scaleY(1);
+    transition : transform 0.4s;
+}
+.list_item_login_order_menu:last-child>a:hover{
+    transform : scaleY(1.2)
+}
+.orders_counter{
+    background-color: var(--secondary-color);
+    color : var(--white-color);
+    position : absolute;
+    top : -0.5rem;
+    right :-0.5rem;
+    width : 1.5rem;
+    height : 1.5rem;
+    border-radius : 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:992px) {
+    .navbar{
+        width : 90%;
+    }
+}
