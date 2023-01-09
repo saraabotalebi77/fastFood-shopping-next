@@ -1,16 +1,15 @@
 .header{
     width : 100%;
-    padding-right : 1rem;
-    padding-left : 1rem;
     background-color: var(--primary-color);
     position : fixed;
     top : 0;
 }
-.navbar{
+.header_content{
     width : 85%;
     margin : auto;
     display: flex;
     justify-content: space-between;  
+    align-items: center;
 }
 .navbar_logo{
     font-family: "bangers";
@@ -19,15 +18,50 @@
     padding-top : 1rem;
     padding-bottom : 1rem;
 }
-.navbar_menu{
-    flex-grow: 1;
+.menu_icon{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    gap : 0.5rem;
+    align-items: center;
+    cursor: pointer;
+    transition : transform 0.5s ease-in-out;
+}
+.menu_icon_line{
+    width : 3rem;
+    height : 0.4rem;
+    border-radius : 0.5rem;
+    background-color: var(--white-color);
+    transition : transform 0.5s ease-in-out;
+}
+.menu_icon_active{
+    transform : rotate(720deg); 
+}
+.menu_icon_active>.menu_icon_line2{
+    transform : scale(0);
+}
+.menu_icon_active>.menu_icon_line1{
+    transform : rotate(45deg) translate(3px,10px);
+}
+.menu_icon_active>.menu_icon_line3{
+    transform : rotate(-45deg) translate(3px,-10px);
+}
+
+.navbar{
+    position: fixed;
+    width:77%;
+    right : 54%;
+    top : 0%;
+    transform: translateX(50%);
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     gap : 5rem;
-    position: relative;
 }
 .main_menu{
     margin-left : 12rem;
+    padding-top : 1.6rem;
+    padding-bottom : 1.6rem;
     display: flex;
     align-items: center;
     gap : 3rem;
@@ -41,7 +75,6 @@
 .list_item_main_menu>a:hover{
     color : var(--secondary-color)
 }
-
 .login_order_menu{
     position: absolute;
     left : 0;
@@ -75,7 +108,7 @@
     border-radius : 1.5rem;
     padding : 0.2rem 0.8rem;
     transform : scaleY(1);
-    transition : transform 0.4s;
+    transition : transform 0.4s ease-in-out;
 }
 .list_item_login_order_menu:last-child>a:hover{
     transform : scaleY(1.2)
@@ -94,7 +127,65 @@
     align-items: center;
 }
 @media (max-width:992px) {
-    .navbar{
+    .header{
+        z-index : 1;
+    }
+    .header_content{
         width : 90%;
+    }
+    .menu_icon{
+        display: flex;
+    }
+    .navbar{
+        width : 100%;
+        height:6.5rem;
+        right :0%;
+        top :0;
+        overflow: hidden;
+        padding-top : 6.5rem;
+        background-color :#2c343f;
+        transform : translateX(0);
+        gap : 0;
+        font-size: 0;
+        transition: height 0.5s ease-in-out;
+    }
+    .active_navbar{
+        height : 265px;
+    }
+    .main_menu,
+    .login_order_menu{
+        margin : 0 auto;
+        padding : 0.4rem 2rem;
+        width : 90%;
+        position: static;
+        flex-direction:column;
+        align-items: flex-start;
+        gap :0.4rem; 
+    }
+    .list_item_login_order_menu:first-child>a>span{
+        display: block;
+    }
+    .list_item_login_order_menu:last-child>a{
+        background-color: transparent;
+        padding: 0;
+    }
+    .list_item_login_order_menu:last-child>a:hover{
+        transform : scaleY(1)
+    }
+    .list_item_login_order_menu>a{
+        transition: color 0.4s;
+    }
+    .list_item_login_order_menu>a:hover{
+        color : var(--secondary-color)
+    }
+    .orders_counter{
+        transition : color 0.4s , background-color 0.4s  
+    }
+    .list_item_login_order_menu:first-child>a:hover .orders_counter{
+        color : var(--secondary-color);
+        background-color: var(--white-color);
+    }
+    .BsPersonFill_icon{
+        font-size: 2.5rem;
     }
 }
