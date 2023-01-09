@@ -1,11 +1,13 @@
 .header{
     width : 100%;
+    height : 6.5rem;
     background-color: var(--primary-color);
     position : fixed;
     top : 0;
 }
 .header_content{
     width : 85%;
+    height : 100%;
     margin : auto;
     display: flex;
     justify-content: space-between;  
@@ -138,7 +140,7 @@
     }
     .navbar{
         width : 100%;
-        height:6.5rem;
+        height:6rem;
         right :0%;
         top :0;
         overflow: hidden;
@@ -187,5 +189,10 @@
     }
     .BsPersonFill_icon{
         font-size: 2.5rem;
+    }
+}
+@media (max-width:578px) {
+    .navbar_logo{
+        font-size : 3rem;
     }
 }
