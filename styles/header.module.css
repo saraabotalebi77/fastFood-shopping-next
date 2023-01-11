@@ -75,8 +75,9 @@
     cursor : pointer;
     transition: color 0.4s;
 }
-.list_item_main_menu>a:hover{
-    color : var(--secondary-color)
+.list_item_main_menu>a:hover,
+.active_link_list_main_menu{
+    color : var(--secondary-color) !important;
 }
 .login_order_menu{
     position: absolute;
@@ -113,8 +114,9 @@
     transform : scaleY(1);
     transition : transform 0.4s ease-in-out;
 }
+.active_sign_in_link,
 .list_item_login_order_menu:last-child>a:hover{
-    transform : scaleY(1.2)
+    transform : scaleY(1.2) !important;
 }
 .orders_counter{
     background-color: var(--secondary-color);
@@ -129,6 +131,7 @@
     justify-content: center;
     align-items: center;
 }
+
 @media (max-width:992px) {
     .header_content{
         width : 90%;
@@ -171,22 +174,29 @@
     .list_item_login_order_menu:last-child>a{
         background-color: transparent;
         padding: 0;
+        transition: color 0.4s;
     }
+    .active_sign_in_link,
     .list_item_login_order_menu:last-child>a:hover{
-        transform : scaleY(1)
+        transform : scaleY(1) !important;
     }
     .list_item_login_order_menu>a{
         transition: color 0.4s;
     }
+    .active_sign_in_link,
     .list_item_login_order_menu>a:hover{
-        color : var(--secondary-color)
+        color : var(--secondary-color) !important;
     }
     .orders_counter{
         transition : color 0.4s , background-color 0.4s  
     }
+    .active_food_order_link .orders_counter,
     .list_item_login_order_menu:first-child>a:hover .orders_counter{
         color : var(--secondary-color);
         background-color: var(--white-color);
+    }
+    .active_food_order_link span{
+        color : var(--secondary-color);
     }
     .BsPersonFill_icon{
         font-size: 2.5rem;

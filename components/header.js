@@ -1,8 +1,10 @@
 import styles from 'styles/header.module.css';
 import { BsCartFill,BsPersonFill } from "react-icons/bs";
 import Link from 'next/link';
-import {useState,useRef } from 'react';
+import {useState} from 'react';
+import { useRouter } from 'next/router';
 const Header = ()=>{
+    const {pathname} = useRouter();
     const [openMenu,setOpenMenu] = useState(false);
     return(
     <>
@@ -23,23 +25,23 @@ const Header = ()=>{
         <nav className={`${styles.navbar} ${openMenu? styles.active_navbar : null}`}>
                     <ul className={styles.main_menu}>
                         <li className={styles.list_item_main_menu}>
-                            <Link href="/" onClick={()=>{setOpenMenu(false)}}>
+                            <Link href="/" onClick={()=>{setOpenMenu(false)}} className={pathname=="/"?styles.active_link_list_main_menu:null}>
                                 صفحه اصلی
                             </Link>   
                         </li>
                        
                         <li className={styles.list_item_main_menu}>
-                            <Link href="/menu" onClick={()=>{setOpenMenu(false)}}>
+                            <Link href="/menu" onClick={()=>{setOpenMenu(false)}} className={pathname=="/menu"?styles.active_link_list_main_menu:null}>
                                 منو
                             </Link>
                         </li>
                         <li className={styles.list_item_main_menu}>
-                            <Link href="/about-us" onClick={()=>{setOpenMenu(false)}}>
+                            <Link href="/about-us" onClick={()=>{setOpenMenu(false)}} className={pathname=="/about-us"?styles.active_link_list_main_menu:null}>
                                 درباره ما   
                             </Link>
                         </li>
                         <li className={styles.list_item_main_menu}>
-                            <Link href="/contact-us" onClick={()=>{setOpenMenu(false)}}>
+                            <Link href="/contact-us" onClick={()=>{setOpenMenu(false)}} className={pathname=="/contact-us"?styles.active_link_list_main_menu:null}>
                                 تماس با ما       
                             </Link>
                         </li>
@@ -49,7 +51,7 @@ const Header = ()=>{
 
                     <ul className={styles.login_order_menu}>
                         <li className={styles.list_item_login_order_menu}>
-                            <Link href="/food-order">
+                            <Link href="/food-order" onClick={()=>{setOpenMenu(false)}} className={pathname=="/food-order"?styles.active_food_order_link:null}>
                                 <span>سبد خرید</span>
                                 <div>
                                     <div className={styles.orders_counter}>0</div>
@@ -58,7 +60,7 @@ const Header = ()=>{
                             </Link>
                         </li>
                         <li className={styles.list_item_login_order_menu}>
-                            <Link href="/sign-in">
+                            <Link href="/sign-in"   onClick={()=>{setOpenMenu(false)}} className={pathname=="/sign-in"?styles.active_sign_in_link:null}>
                                 <span>ورود</span>
                                 <BsPersonFill className={styles.BsPersonFill_icon}/>
                             </Link>
