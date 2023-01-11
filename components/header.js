@@ -49,7 +49,7 @@ const Header = ()=>{
 
                     <ul className={styles.login_order_menu}>
                         <li className={styles.list_item_login_order_menu}>
-                            <Link href="/food-oreder">
+                            <Link href="/food-order">
                                 <span>سبد خرید</span>
                                 <div>
                                     <div className={styles.orders_counter}>0</div>
@@ -58,7 +58,7 @@ const Header = ()=>{
                             </Link>
                         </li>
                         <li className={styles.list_item_login_order_menu}>
-                            <Link href="/login">
+                            <Link href="/sign-in">
                                 <span>ورود</span>
                                 <BsPersonFill className={styles.BsPersonFill_icon}/>
                             </Link>

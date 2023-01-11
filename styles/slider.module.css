@@ -1,0 +1,40 @@
+.slideShow{
+    height : 50rem;
+    width : 100%;
+    position : relative;
+    overflow: hidden;
+}
+.slides{
+    width : 100%;
+    height : 100%;
+    display: flex;
+    font-size : 0;
+    transition: transform 0.4s;
+}
+.slideWrapper,
+.slide{
+    min-width : 100%;
+    height : 100%;
+}
+.btn_slides_wrapper{
+    position : absolute;
+    bottom : 5%;
+    width : 100%;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    gap : 0.5rem;
+}
+.btn_slide{
+    width : 1.2rem;
+    height : 1.2rem;
+    border-radius : 50%;
+    background-color : #fff;
+    cursor :pointer;
+    transition : all 0.4s;
+}
+.btn_slide_active{
+    background-color : var(--secondary-color);
+    width : 1.5rem;
+    height: 1.5rem;
+}
