@@ -60,10 +60,14 @@ const Header = ()=>{
                             </Link>
                         </li>
                         <li className={styles.list_item_login_order_menu}>
-                            <Link href="/login"   onClick={()=>{setOpenMenu(false)}} className={pathname=="/login"?styles.active_sign_in_link:null}>
-                                <span>ورود</span>
-                                <BsPersonFill className={styles.BsPersonFill_icon}/>
+                            <Link href="/login"   onClick={()=>{setOpenMenu(false)}}>
+                                ورود
                             </Link>
+                            <span>/</span>
+                            <Link href="/register"   onClick={()=>{setOpenMenu(false)}}>
+                                ثبت نام
+                            </Link>
+                            <BsPersonFill className={styles.BsPersonFill_icon}/>
                         </li>
                     </ul>
                 </nav>

@@ -22,7 +22,7 @@ const SignUp= ()=>{
                 </div> 
                 <div className={styles.repeat_password_wrapper}>
                     <input type="password" id="password" className={styles.repeat_password_input} placeholder=" "/>
-                    <label htmlFor="password" className={styles.repeat_password_label}>رمز عبور</label>
+                    <label htmlFor="password" className={styles.repeat_password_label}>تکرار رمز عبور</label>
                 </div> 
                 <div className={styles.btn_register_wrapper}>
                     <Button>ثبت نام</Button>
