@@ -60,11 +60,11 @@ const Header = ()=>{
                             </Link>
                         </li>
                         <li className={styles.list_item_login_order_menu}>
-                            <Link href="/login"   onClick={()=>{setOpenMenu(false)}}>
+                            <Link href="/login"   onClick={()=>{setOpenMenu(false)}} className={pathname=="/login"?styles.active_login_link:null}>
                                 ورود
                             </Link>
                             <span>/</span>
-                            <Link href="/register"   onClick={()=>{setOpenMenu(false)}}>
+                            <Link href="/register"   onClick={()=>{setOpenMenu(false)}} className={pathname=="/register"?styles.active_register_link:null}>
                                 ثبت نام
                             </Link>
                             <BsPersonFill className={styles.BsPersonFill_icon}/>

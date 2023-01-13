@@ -9,8 +9,8 @@ const SignUp= ()=>{
                 <h2 className={styles.title_form}>ثبت نام</h2>
 
                 <div className={styles.fullName_wrapper}>
-                    <input type="text" id="email" className={styles.fullName_input} placeholder=" "/>
-                    <label htmlFor="email" className={styles.fullName_label}>نام و نام خانوادگی</label>
+                    <input type="text" id="fullName" className={styles.fullName_input} placeholder=" "/>
+                    <label htmlFor="fullName" className={styles.fullName_label}>نام و نام خانوادگی</label>
                 </div>
                 <div className={styles.email_wrapper}>
                     <input type="text" id="email" className={styles.email_input} placeholder=" "/>
@@ -21,8 +21,8 @@ const SignUp= ()=>{
                     <label htmlFor="password" className={styles.password_label}>رمز عبور</label>
                 </div> 
                 <div className={styles.repeat_password_wrapper}>
-                    <input type="password" id="password" className={styles.repeat_password_input} placeholder=" "/>
-                    <label htmlFor="password" className={styles.repeat_password_label}>تکرار رمز عبور</label>
+                    <input type="password" id="repeat-password" className={styles.repeat_password_input} placeholder=" "/>
+                    <label htmlFor="repeat-password" className={styles.repeat_password_label}>تکرار رمز عبور</label>
                 </div> 
                 <div className={styles.btn_register_wrapper}>
                     <Button>ثبت نام</Button>

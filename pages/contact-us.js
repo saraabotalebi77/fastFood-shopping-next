@@ -1,8 +1,10 @@
-const ContactUs = ()=>{
+import ContactUs from "components/contact-us";
+
+const ContactUsPage = ()=>{
     return(
         <div>
-            <h1>contac-us</h1>
+            <ContactUs/>
         </div>
     )
 }
-export default ContactUs;
+export default ContactUsPage;

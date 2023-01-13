@@ -33,6 +33,14 @@ html{
   font-size : 62.5%;
   scroll-behavior: smooth;
 }
+::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+html{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 body{
   direction: rtl;
   font-size : 1.8rem;

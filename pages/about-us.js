@@ -1,8 +1,8 @@
-const AboutUs = ()=>{
+import AboutUS from "components/about-us";
+
+const AboutUsPage = ()=>{
     return(
-        <div>
-            <h1>About-us</h1>
-        </div>
+        <AboutUS/>
     )
 }
-export default AboutUs;
+export default AboutUsPage;

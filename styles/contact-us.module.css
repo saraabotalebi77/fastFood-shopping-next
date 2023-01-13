@@ -1,0 +1,69 @@
+.contactus_wrapper{
+    width : 85%;
+    padding-top : 8rem;
+    padding-bottom : 8rem;
+    margin : auto;
+}
+.title_form{
+    color : var(--primary-color);
+    margin-bottom : 2rem;
+}
+.contactus_content{
+    width : 100%;
+    display: flex;
+    justify-content : space-between;
+    flex-wrap : wrap;
+    gap : 2rem;
+}
+.form_contactus,
+.map_wrapper{
+    width : 48.5%;
+}
+.form_contactus>fieldset{
+    display: flex;
+    flex-direction: column;
+    gap : 1.5rem;
+    border : none;
+}
+.fullName_input,
+.email_input,
+.title_message_input,
+.message_textarea{
+    outline : none;
+    border : 1px solid rgb(100, 100, 100);
+    border-radius : 0.4rem;
+    padding : 0.6rem 0.8rem;
+    color : var(--primary-color);
+    font-family: "Vazir","bangers";
+}
+.email_input{
+    text-align : left;
+}
+.message_textarea{
+    resize: none;
+    height : 7rem;
+}
+.fullName_input::placeholder,
+.email_input::placeholder,
+.title_message_input::placeholder,
+.message_textarea::placeholder{
+    color : var(--primary-color);
+    font-family : "Vazir" ;
+}
+.email_input::placeholder{
+    text-align : right;
+}
+.btn_register_wrapper{
+    text-align: left;
+}
+@media (max-width:768px){
+    .contactus_wrapper{
+        width : 90%;
+        gap : 2rem;
+    }
+    .form_contactus,
+    .map_wrapper{
+        width : 100%;
+    }
+    
+}

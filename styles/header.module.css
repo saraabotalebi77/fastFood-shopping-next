@@ -188,15 +188,11 @@
     .BsPersonFill_icon{
         display : none;
     }
-    .active_sign_in_link,
-    .list_item_login_order_menu:last-child>a:hover{
-        transform : scaleY(1) !important;
-    }
     .list_item_login_order_menu>a{
         transition: color 0.4s;
     }
-    .active_sign_in_link,
-    .list_item_login_order_menu>a:hover{
+    .active_login_link,
+    .active_register_link{
         color : var(--secondary-color) !important;
     }
     .orders_counter{
