@@ -1,0 +1,15 @@
+.btn{
+    background-color: var(--secondary-color);
+    color : #fff;
+    border : none;
+    outline : 0px solid transparent;
+    border-radius : 1.8rem;
+    padding : 0.4rem 2.5rem;
+    font-family : "Vazir";
+    font-size : 1.6rem;
+    cursor : pointer;
+    transition: outline 0.3s ease-in-out;
+}
+.btn:hover{
+    outline : 0.3rem solid #ffb61a;
+}

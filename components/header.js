@@ -60,7 +60,7 @@ const Header = ()=>{
                             </Link>
                         </li>
                         <li className={styles.list_item_login_order_menu}>
-                            <Link href="/sign-in"   onClick={()=>{setOpenMenu(false)}} className={pathname=="/sign-in"?styles.active_sign_in_link:null}>
+                            <Link href="/login"   onClick={()=>{setOpenMenu(false)}} className={pathname=="/login"?styles.active_sign_in_link:null}>
                                 <span>ورود</span>
                                 <BsPersonFill className={styles.BsPersonFill_icon}/>
                             </Link>

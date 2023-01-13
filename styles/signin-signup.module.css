@@ -1,0 +1,147 @@
+.form_signin_wrapper,
+.form_signup_wrapper{
+    padding: 10rem 1rem;
+    background-image:linear-gradient(to left , rgba(255, 255, 255, 0.6),rgba(255, 255, 255, 0.6)), url("/images/bg-white-fastFood.jpg");
+    background-attachment: fixed;
+}
+.form_signup>fieldset,
+.form_signin>fieldset{
+    padding : 2.5rem 2rem;
+    width : 40%;
+    margin : auto;
+    background-color: var(--white-color);
+    border-radius : 1rem;
+    border : none;
+    box-shadow: 1px 1px 10px 1px rgb(172, 172, 172),
+     -1px -1px 10px 1px rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+}
+.title_form{
+    width : 100%;
+    text-align : center;
+    color : var(--primary-color);
+    padding-bottom : 3rem;
+}
+.fullName_wrapper,
+.repeat_password_wrapper,
+.email_wrapper,
+.password_wrapper,
+.remember_password_wrapper,
+.btn_login_wrapper,
+.btn_register_wrapper{
+    min-width : 100%;
+    position: relative;
+    margin-bottom : 2.5rem;
+}
+.btn_register_wrapper,
+.btn_login_wrapper{
+    text-align : center;
+}
+.fullName_input,
+.email_input,
+.password_input,
+.repeat_password_input{
+    width:100%;
+    padding : 0rem 0.5rem;
+    border : none;
+    outline : none;
+    border-bottom : 1px solid #ccc;
+    color : var(--primary-color);
+    font-size: 1.5rem;
+    font-family : "Vazir";
+}
+.email_input{
+    direction: ltr;
+}
+.fullName_input:-webkit-autofill,
+.email_input:-webkit-autofill,
+.password_input:-webkit-autofill,
+.repeat_password_input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+    -webkit-text-fill-color:  var(--primary-color) !important;
+}
+.fullName_label,
+.email_label,
+.password_label,
+.repeat_password_label{
+    position : absolute;
+    bottom : 0.5rem;
+    right : 0.5rem;
+    font-size : 1.4rem;
+    color  : var(--primary-color);
+    transition : bottom 0.8s ease-in-out;
+}
+.fullName_wrapper:focus-within>.fullName_label,
+.repeat_password_wrapper:focus-within>.repeat_password_label,
+.email_wrapper:focus-within>.email_label,
+.password_wrapper:focus-within>.password_label,
+.fullName_input:not(:placeholder-shown) + .fullName_label,
+.repeat_password_input:not(:placeholder-shown) + .repeat_password_label,
+.email_input:not(:placeholder-shown) + .email_label,
+.password_input:not(:placeholder-shown) + .password_label{
+    bottom : 2.5rem;
+}
+.remember_password_wrapper{
+    display: flex;
+    align-items : center;
+    gap : 0.5rem;
+}
+.remember_password_label{
+    font-size : 1.4rem;
+    color  : var(--primary-color);
+    cursor : pointer;
+    margin-right : 2.5rem;
+}
+.remember_password_input{
+    position: relative;
+}
+.remember_password_label::before{
+    content : "";
+    position : absolute;
+    top : 50%;
+    right : 2%;
+    transform : translate(50%,-50%);
+    width :1.4rem;
+    height :1.4rem;
+    border-radius : 0.5rem;
+    cursor : pointer;
+    background-color : var(--white-color);
+    border : 1px solid var(--secondary-color);
+}
+.remember_password_input:checked + .remember_password_label::before{
+    content : "\2713";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : var(--white-color);
+    background-color : var(--secondary-color);
+    font-weight : bold;
+}
+.register_page_wrapper,
+.login_page_wrapper{
+    font-size : 1.6rem;
+    color : var(--primary-color);
+}
+.register_link,
+.login_link{
+    color : var(--secondary-color);
+}
+@media (max-width:992px) {
+    .form_signin>fieldset,
+    .form_signup>fieldset{
+        width : 50%;
+    }
+}
+@media (max-width:768px) {
+    .form_signin>fieldset,
+    .form_signup>fieldset{
+        width : 64%;
+    }
+}
+@media (max-width:578px) {
+    .form_signin>fieldset,
+    .form_signup>fieldset{
+        width : 100%;
+    }
+}
