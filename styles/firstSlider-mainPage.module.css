@@ -9,11 +9,15 @@
     height : 100%;
     display: flex;
     font-size : 0;
-    transition: transform 0.4s;
+    transition: transform 0.5s ease-in-out;
 }
-.slideWrapper,
+.slideWrapper{
+    min-width: 100%;
+    max-width: 100%;
+    height : 100%;
+}
 .slide{
-    min-width : 100%;
+    width : 100%;
     height : 100%;
 }
 .btn_slides_wrapper{
@@ -29,12 +33,17 @@
     width : 1.2rem;
     height : 1.2rem;
     border-radius : 50%;
-    background-color : #fff;
+    background-color : var(--white-color);
     cursor :pointer;
-    transition : all 0.4s;
+    transition : all 0.4s ease-in-out;
 }
 .btn_slide_active{
     background-color : var(--secondary-color);
     width : 1.5rem;
     height: 1.5rem;
+}
+@media (max-width:576px){
+    .slide{
+        object-fit: cover;
+    }
 }

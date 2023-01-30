@@ -1,9 +1,8 @@
-import styles from 'styles/slider.module.css';
+import styles from 'styles/firstSlider-mainPage.module.css';
 import {useState} from "react";
 const Slider = ({activeSlideIndex,setActiveSlideIndex,slidesList})=>{
-
     const [activeSlideClone ,setActiveSlideClone] = useState(0);
-    
+    //this function handle button of slide 
     const slideBtnHandler = (index)=>{
         if(index==1 && activeSlideIndex==slidesList.length-2){
             setActiveSlideIndex(slidesList.length-1);
@@ -14,6 +13,7 @@ const Slider = ({activeSlideIndex,setActiveSlideIndex,slidesList})=>{
             setActiveSlideIndex(index);
         }
     }
+    //this function handle transitionEnd event
     const transitionEndHandler = (event)=>{
         const slides = event.target.children;
         if(slides[activeSlideIndex].id=="first-clone"){
@@ -44,7 +44,8 @@ const Slider = ({activeSlideIndex,setActiveSlideIndex,slidesList})=>{
                     {slidesList.map((slide,index)=>(
                         (index<slidesList.length-1) && (index>0)? 
                         <div key={index} 
-                        className={`${styles.btn_slide} ${(index==activeSlideIndex || (activeSlideIndex==slidesList.length-1 && index==1) || (activeSlideIndex==0 && index==slidesList.length-2))?styles.btn_slide_active:null}`} onClick={()=>slideBtnHandler(index)}></div>
+                            className={`${styles.btn_slide} ${(index==activeSlideIndex || (activeSlideIndex==slidesList.length-1 && index==1) || (activeSlideIndex==0 && index==slidesList.length-2))?styles.btn_slide_active:null}`} onClick={()=>slideBtnHandler(index)}>
+                        </div>
                         :null
                     ))}
                 </div>

@@ -1,0 +1,151 @@
+.mainMenu{
+    width : 85%;
+    margin : auto;
+    display: flex;
+    gap : 1rem;
+    padding-top : 10rem;
+    padding-bottom : 10rem;
+}
+.searchForm_foodsCategory_arrangeFoods_wrrapper{
+    min-width : 25%;
+    display: flex;
+    flex-direction: column;
+    color : var(--primary-color);
+}
+.search_form{
+    border : 3px solid var(--primary-color);
+    border-radius : 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top : 2rem;
+    margin-bottom : 2rem;
+}
+.search_form_input{
+    width : 100%;
+    border : none;
+    outline : none;
+    padding : 1rem 0.8rem;
+    font-size : 1.6rem;
+    color : var(--primary-color);
+    font-family : "vazir";
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius:0.5rem;
+}
+.search_form_label{
+    position: absolute;
+    top : 0.9rem;
+    right : 1rem;
+    font-size : 1.6rem;
+    font-weight : bold;
+    background-color: var(--white-color);
+    padding-right : 0.5rem;
+    padding-left : 0.5rem;
+    transition : top 0.4s , right 0.4s, font-size 0.4s;
+}
+.search_form:focus-within > .search_form_label,
+.search_form_input:not(:placeholder-shown) + .search_form_label{    
+    top : -1.7rem;
+    right : 0.4rem;
+    font-size : 1.8rem;
+}
+.search_form_btn{
+    padding-right : 1rem;
+    padding-left : 1rem;
+    background-color : var(--primary-color);
+    outline : none;
+    border : none;
+}
+.search_form_btn_icon{
+    color : var(--white-color);
+    font-size : 2.5rem;
+    font-weight : bold;
+}
+.separated_line{
+    border : none;
+    width : 100%;
+    height : 1px;
+    background-color: #ccc;
+    box-shadow : 1px 1px 2px rgb(247, 247, 247);
+}
+.category_warpper,
+.arrange_foods_wrapper{
+    margin-top : 2rem;
+    padding-bottom : 1.2rem;
+}
+.category_wrapper_title,
+.arrange_foods_title{
+    display: block;
+    font-weight : bold;
+    margin-bottom : 0.8rem;
+}
+.category_list{
+    list-style-type: disc;
+    list-style-position : inside;
+    margin-right : 1.4rem;
+}
+.category_list_item{
+    cursor : pointer;
+}
+.active_category_list_item{
+    color : var(--secondary-color);
+}
+.arrange_foods{
+    display: flex;
+    flex-direction : column;
+    margin-right : 1.4rem;
+}
+.arrange_foods_label{
+    position : relative;
+    padding-right : 2rem;
+    cursor : pointer;
+}
+.arrange_foods_label::before{
+    content : "";
+    width : 1.6rem;
+    height : 1.6rem;
+    border-radius : 50%;
+    border : 1px solid #ccc;
+    position: absolute;
+    top : 50%;
+    right : 0;
+    transform : translateY(-50%);
+    transition : border 0.4s;
+}
+.arrange_foods_label::after{
+    content : "";
+    width : 1.6rem;
+    height : 1.6rem;
+    border-radius : 50%;
+    background-color: var(--primary-color);
+    border : 1px solid var(--primary-color);
+    position: absolute;
+    top : 50%;
+    right : 0;
+    transform : translateY(-50%) scale(0);
+    transition : transform 0.4s;
+}
+.arrang_foods_input:checked + .arrange_foods_label::before{
+    border-color : var(--primary-color) ;
+}
+.arrang_foods_input:checked + .arrange_foods_label::after{
+    transform : translateY(-50%) scale(0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:992px) {
+    .mainMenu{
+        width : 90%;
+        flex-direction : column;
+    }
+}

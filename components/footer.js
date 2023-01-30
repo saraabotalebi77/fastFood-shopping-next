@@ -6,26 +6,35 @@ const Footer = ()=>{
             <div className={styles.title_wrapper}>
                 <h1 className={styles.title_name}>bama</h1>
             </div>
-            <div className={styles.social_media_icons_wrapper}>
-                <a href="#" className={`${styles.faceboock_icon_wrapper} ${styles.icon_wrapper}`}>
-                    <BsFacebook/>
-                </a>
-                <a href="#" className={`${styles.instagram_icon_wrapper} ${styles.icon_wrapper}`}>
-                    <BsInstagram/>
-                </a>
-                <a href="#" className={`${styles.twitter_icon_wrapper} ${styles.icon_wrapper}`}>
-                    <BsTwitter/>
-                </a>
-                <a href="#" className={`${styles.youtube_icon_wrapper} ${styles.icon_wrapper}`}>
-                    <BsYoutube/>
-                </a>
-            </div>
-       
-            <div className={styles.info_fastfood_wrapper}>
-                <p className={styles.address}>آدرس :‌ تهران، بلوار دانشجو، روبه‌روی مرکز خرید ولنجک، نبش گلستان دهم</p>
-                <hr className={styles.line_separated}/>
-                <p className={styles.telephone}>تلفن : ۰۲۱۲۲۲۰۵۰۵۰</p>
-            </div>
+            <address>
+                <ul className={styles.social_media_menu}>
+                    <li className={styles.social_media_item}>
+                        <a href="https://www.facebook.com" target="new" className={`${styles.faceboock_link} ${styles.social_media_link}`}>
+                            <BsFacebook/>
+                        </a>
+                    </li>
+                    <li className={styles.social_media_item}>
+                        <a href="https://www.instagram.com" target="new" className={`${styles.instagram_link} ${styles.social_media_link}`}>
+                            <BsInstagram/>
+                        </a>
+                    </li>
+                    <li className={styles.social_media_item}>
+                        <a href="https://twitter.com" target="new" className={`${styles.twitter_link} ${styles.social_media_link}`}>
+                            <BsTwitter/>
+                        </a>
+                    </li>
+                    <li className={styles.social_media_item}>
+                        <a href="https://www.youtube.com" target="new" className={`${styles.youtube_link} ${styles.social_media_link}`}>
+                            <BsYoutube/>
+                        </a>
+                    </li>
+                </ul>
+                <div className={styles.info_fastfood_wrapper}>
+                    <span className={styles.address}>آدرس :‌ تهران، بلوار دانشجو، روبه‌روی مرکز خرید ولنجک، نبش گلستان دهم</span>
+                    <hr className={styles.line_separated}/>
+                    <span className={styles.telephone}>تلفن : ۰۲۱۲۲۲۰۵۰۵۰</span>
+                </div>
+            </address>
             <hr/>
             <p>تمامی حقوق این وبسایت متعلق به فست فود باما است.</p>
         </footer>

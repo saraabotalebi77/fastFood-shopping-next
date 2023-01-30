@@ -30,11 +30,19 @@
 .title_message_input,
 .message_textarea{
     outline : none;
-    border : 1px solid rgb(100, 100, 100);
+    border : none;
     border-radius : 0.4rem;
-    padding : 0.6rem 0.8rem;
+    padding : 0.8rem 1rem;
     color : var(--primary-color);
     font-family: "Vazir","bangers";
+    box-shadow :2px 2px 4px #e2e2e2 inset,-2px -2px 4px #f3f2f2 inset;
+    transition: box-shadow 0.5s ;
+}
+.fullName_input:focus,
+.email_input:focus,
+.title_message_input:focus,
+.message_textarea:focus{
+    box-shadow : 1px 1px 0px #e2e2e2 inset,-1px -1px 0px #f3f2f2 inset;
 }
 .email_input{
     text-align : left;
@@ -47,7 +55,7 @@
 .email_input::placeholder,
 .title_message_input::placeholder,
 .message_textarea::placeholder{
-    color : var(--primary-color);
+    color : rgb(131, 131, 131);
     font-family : "Vazir" ;
 }
 .email_input::placeholder{

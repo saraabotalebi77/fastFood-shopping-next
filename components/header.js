@@ -4,7 +4,9 @@ import Link from 'next/link';
 import {useState} from 'react';
 import { useRouter } from 'next/router';
 const Header = ()=>{
+    //pathname is used to change the style of the active navigation link
     const {pathname} = useRouter();
+    //this state specifies whether the navigation menu is open or closed in width less than 993px
     const [openMenu,setOpenMenu] = useState(false);
     return(
     <>
@@ -31,7 +33,7 @@ const Header = ()=>{
                         </li>
                        
                         <li className={styles.list_item_main_menu}>
-                            <Link href="/menu" onClick={()=>{setOpenMenu(false)}} className={pathname=="/menu"?styles.active_link_list_main_menu:null}>
+                            <Link href="/main-menu" onClick={()=>{setOpenMenu(false)}} className={pathname=="/menu"?styles.active_link_list_main_menu:null}>
                                 منو
                             </Link>
                         </li>

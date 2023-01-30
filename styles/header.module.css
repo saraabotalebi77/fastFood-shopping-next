@@ -3,7 +3,7 @@
     height : 6.5rem;
     background-color: var(--primary-color);
     position : fixed;
-    z-index : 2;
+    z-index : 3;
     top : 0;
 }
 .header_content{
@@ -50,7 +50,7 @@
 
 .navbar{
     position: fixed;
-    z-index:3;
+    z-index:4;
     width:77%;
     height : 6.5rem;
     right : 54%;
@@ -149,10 +149,10 @@
         top :0;
         overflow: hidden;
         padding-top : 6.5rem;
-        background-color : var(--primary-color-01);
+        background-color : var(--primary-color-navbar);
         transform : translateX(0);
         gap : 0;
-        z-index : 1;
+        z-index : 2;
         font-size: 0;
         transition: height 0.5s ease-in-out;
     }
@@ -210,7 +210,7 @@
         font-size: 2.5rem;
     }
 }
-@media (max-width:578px) {
+@media (max-width:576px) {
     .navbar_logo{
         font-size : 3rem;
     }

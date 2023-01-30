@@ -11,35 +11,37 @@
 }
 :root{
   --primary-color :#222831; 
-  --primary-color-01 : #2c343f;
+  --primary-color-navbar : #2c343f;
   --secondary-color : #ffbe33;
+  --secondary-color-01 : #ffb61a;
+  --gray-color : #ccc;
   --white-color : #fff;
 }
 *{
   padding: 0;
   margin: 0;
-  box-sizing : border-box;
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+}
 html,
 body{
   width :100%;
-  overflow-x: hidden;
 }
 html{
   font-size : 62.5%;
   scroll-behavior: smooth;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 ::-webkit-scrollbar {
   display: none;
-}
-/* Hide scrollbar for IE, Edge and Firefox */
-html{
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
 }
 body{
   direction: rtl;

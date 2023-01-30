@@ -1,0 +1,86 @@
+.card{
+    min-width : 32%;
+    max-width : 32%;
+    border-radius : 2rem;
+    margin-bottom : 1%;
+    margin-top : 1%;
+    color : var(--white-color);
+    background-color: var(--primary-color);
+    overflow: hidden;
+}
+.img_wrapper{
+    width : 100%;
+    height :18rem;
+    display: flex;
+    border-radius: 2rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 5rem;
+    transition : transform 0.5s ease-in-out;
+}
+.image{
+    width : 100%;
+    height : 100%;
+    border-radius: 2rem;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 5rem;
+    /* object-fit: cover; */ 
+}
+.img_wrapper:hover{
+    transform : scale(1.1);
+}
+.title{
+    font-size : 1.6rem;
+    padding-top : 1.2rem;
+    padding-bottom : 1.2rem;
+    padding-right : 2rem;
+    padding-left : 2rem;
+}
+.description{
+    overflow: hidden;
+    width:100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    padding-right : 2rem;
+    padding-left : 2rem;
+    font-size : 1.4rem;
+}
+.price_buy_wrapper{
+    padding-right : 2rem;
+    padding-left : 2rem;
+    padding-top : 1.5rem;
+    padding-bottom : 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.price_wrapper{
+    font-size : 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    gap : 0.5rem;
+}
+.pricee_before_discount{
+    font-size : 1.4rem;
+}
+.buy_wrapper{
+    background-color: var(--secondary-color);
+    width : 3.5rem;
+    height : 3.5rem;
+    font-size : 2rem;
+    border-radius : 50%;
+    display: flex;
+    justify-content: center;
+    align-items : center;
+    cursor : pointer;
+}
+@media (max-width:992px){
+    .card{
+        min-width : 49%;
+    }
+}
+@media (max-width:576px){
+    .card{
+        min-width : 100%;
+    }
+}
