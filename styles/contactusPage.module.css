@@ -56,7 +56,6 @@
 .title_message_input::placeholder,
 .message_textarea::placeholder{
     color : rgb(131, 131, 131);
-    font-family : "Vazir" ;
 }
 .email_input::placeholder{
     text-align : right;

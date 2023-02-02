@@ -77,10 +77,12 @@
 @media (max-width:992px){
     .card{
         min-width : 49%;
+        max-width : 49%;
     }
 }
 @media (max-width:576px){
     .card{
         min-width : 100%;
+        max-width : 100%;
     }
 }

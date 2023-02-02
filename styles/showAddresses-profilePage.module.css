@@ -1,0 +1,81 @@
+.addresses_wrapper{
+    margin-right : 2rem;
+    display : flex;
+    flex-direction : column;
+    gap : 2rem;
+}
+.address_container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap : wrap;
+    gap : 0.5rem;
+    border-radius : 1rem;
+    padding : 2rem 3rem;
+    box-shadow :  -5px -5px 10px inset rgb(232, 232, 232),
+    -2px -2px 2px rgb(245, 245, 245);
+    font-size : 1.6rem;
+}
+.close_icon_wrapper{
+    min-width : 100%;
+    text-align : left;
+}
+.close_icon{
+    color : #71819e;
+    cursor : pointer;
+    transition : color 0.4s;
+}
+.close_icon:hover{
+    color : var(--primary-color);
+}
+.title_wrapper,
+.phoneNumber_wrapper,
+.postalCode_wrapper,
+.province_wrapper,
+.city_wrapper,
+.address_wrapper{
+    min-width : 49.5%;
+    color : var(--primary-color);
+}
+.btn_edit_wrapper{
+    min-width : 100%;
+}
+.btn_edit{
+    width : 100%;
+    padding-top : 0.8rem;
+    padding-bottom : 0.8rem;
+    color : var(--white-color);
+    background-color : var(--secondary-color);
+    font-family :"Vazir";
+    font-size : 1.6rem;
+    font-weight : bold;
+    border : none;
+    outline : none;
+    border-radius : 0.5rem;
+    cursor : pointer;
+    transition : background-color 0.4s;
+}
+.btn_edit:hover{
+    background-color : var(--secondary-color-01);
+}
+.create_address_btn_wrapper{
+    text-align:left;
+}
+.create_address_btn{
+    padding : 0.8rem 1.2rem;
+    color : var(--white-color);
+    background-color : var(--primary-color);
+    font-family :"Vazir";
+    font-size : 1.6rem;
+    border : none;
+    outline : none;
+    border-radius : 0.5rem;
+    cursor : pointer;
+}
+@media (max-width:576px){
+    .addresses_wrapper{
+        margin-right : 0;
+    }
+    .address_container{
+        font-size : 1.4rem;
+    }
+}

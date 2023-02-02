@@ -1,6 +1,6 @@
 import styles from 'styles/button.module.css';
 import Link from 'next/link';
-const Button = ({href,children})=>{
+const Button = ({href,children,clickEventHandler})=>{
     if(href){
         return(
             <Link href={href} className={styles.btn}>
@@ -9,7 +9,7 @@ const Button = ({href,children})=>{
         )
     }
     return(
-        <button className={styles.btn}>
+        <button className={styles.btn} onClick={clickEventHandler}>
             {children}
         </button>
     )

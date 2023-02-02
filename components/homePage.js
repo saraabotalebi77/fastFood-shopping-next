@@ -1,7 +1,7 @@
 import FirstSlider from "./firstSlider-mainPage";
 import SecondSlider from "./secondSlider-mainPage";
 import Button from "common/button";
-import styles from 'styles/home.module.css';
+import styles from 'styles/homePage.module.css';
 import Foods from "./foods-mainPage";
 const Home = ({activeSlideIndex,setActiveSlideIndex,slidesList})=>{
     return(

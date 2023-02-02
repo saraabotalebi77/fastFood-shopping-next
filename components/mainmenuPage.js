@@ -1,7 +1,7 @@
-import styles from 'styles/main-menu.module.css';
+import styles from 'styles/mainmenuPage.module.css';
 import { BsSearch } from "react-icons/bs";
 import { useState } from 'react';
-import Foods from 'data/data';
+import {Foods} from 'data/data';
 import FoodsPagination from './foodsPagination-mainMenuPage';
 const MainMenu = ()=>{
     const [foods,set_foods] = useState(Foods["pizza"]["foods"]);

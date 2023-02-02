@@ -73,4 +73,7 @@
     .info_fastfood_wrapper ~ p{
         font-size : 1.4rem;
     }
+    .footer > p:last-child{
+        font-size : 1.4rem;
+    }
 }

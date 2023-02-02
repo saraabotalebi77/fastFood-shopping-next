@@ -1,4 +1,4 @@
-const Foods = {
+export const Foods = {
     "pizza" : {"logo" : "images/pizza.jpg",
         "foods":[
             {
@@ -370,4 +370,23 @@ const Foods = {
             }
         ]},
 }
-export default Foods;
+export const Addresses = [
+    {
+        id:"1",
+        title:"محل کار",
+        phoneNumber : "09022533535",
+        postalCode : "4586-2115",
+        province : "قم",
+        city : "قم",
+        address : "شهرک قدس - خیابان قدوسی - کوچه ۱۵ - پلاک ۲۶"
+    },
+    {
+        id :"2",
+        title:"محل کار",
+        phoneNumber : "09022533535",
+        postalCode : "4586-2115",
+        province : "قم",
+        city : "قم",
+        address : "شهرک قدس - خیابان قدوسی - کوچه ۱۵ - پلاک ۲۶"
+    },
+]

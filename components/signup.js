@@ -4,7 +4,7 @@ import styles from 'styles/signin-signup.module.css';
 const SignUp= ()=>{
     return(
         <div className={styles.form_signup_wrapper}>
-        <from className={styles.form_signup}>
+        <form className={styles.form_signup}>
             <fieldset>
                 <h2 className={styles.title_form}>ثبت نام</h2>
 
@@ -31,7 +31,7 @@ const SignUp= ()=>{
                     <p className={styles.login_statement}>در صورتیکه حساب ندارید روی <Link href="/login" className={styles.login_link}>ورود</Link> کلیک کنید </p>
                 </div>
             </fieldset>
-        </from>
+        </form>
     </div>
     )
 }

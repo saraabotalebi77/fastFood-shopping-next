@@ -1,4 +1,4 @@
-import styles from 'styles/gallery-aboutus.module.css';
+import styles from 'styles/gallery-aboutusPage.module.css';
 const Gallery = ({setActiveSlide})=>{
     return(
     <div className={`${styles.gallery}`}>

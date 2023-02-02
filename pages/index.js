@@ -1,4 +1,4 @@
-import Home from "components/home";
+import Home from "components/homePage";
 import { useEffect,useState } from "react";
 const HomePage = ()=>{
     // this state define index of active slide

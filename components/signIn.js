@@ -4,7 +4,7 @@ import Link from "next/link";
 const SignIn = ()=>{
     return(
         <div className={styles.form_signin_wrapper}>
-            <from className={styles.form_signin}>
+            <form className={styles.form_signin}>
                 <fieldset>
                     <h2 className={styles.title_form}>ورود</h2>
                     <div className={styles.email_wrapper}>
@@ -26,7 +26,7 @@ const SignIn = ()=>{
                         <p className={styles.register_statement}>در صورتیکه حساب ندارید روی <Link href="/register" className={styles.register_link}>عضویت</Link> کلیک کنید </p>
                     </div>
                 </fieldset>
-            </from>
+            </form>
         </div>
     )
 }

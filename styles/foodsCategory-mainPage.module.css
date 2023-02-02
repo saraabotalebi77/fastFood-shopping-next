@@ -48,6 +48,7 @@
     display: flex;
     align-items: center;
     gap : 2%;
+    transition : transform 0.4s ease-in-out; 
 }
 .next_btn,
 .prev_btn{
@@ -72,6 +73,9 @@
 .prev_btn{
     left : 0%;
     transform : translate(-50%,-50%);
+}
+.disable_prev_next_btn{
+    color : #ccc;
 }
 @media (max-width:992px){
     .category{
