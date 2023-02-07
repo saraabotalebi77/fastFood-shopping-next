@@ -1,9 +1,6 @@
 import {BsXLg} from "react-icons/bs";
-import { orders } from "data/data";
-import { useState } from "react";
 import styles from "styles/ordered-foods-profilePage.module.css";
 const OrderedFoods = ({order_id,set_order_id,foods})=>{
-    console.log(foods)
     return(
         <div className={`pop-up ${order_id ? "active-pop-up" : null}`}>
             <div className={styles.ordered_foods_wrapper}>
