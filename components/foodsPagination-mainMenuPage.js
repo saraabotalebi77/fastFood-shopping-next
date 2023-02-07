@@ -1,7 +1,7 @@
 import Card from 'common/cardFood';
 import styles from 'styles/foodsPagination-mainMenuPage.module.css';
 import {useState} from 'react';
-import { BsChevronDoubleLeft,BsChevronDoubleRight} from "react-icons/bs";
+import Pagination from 'common/pagination';
 const FoodsPagination = ({foods})=>{
     //this state specifies active page 
     const [active_page , set_active_page] = useState(0);
@@ -33,23 +33,7 @@ const FoodsPagination = ({foods})=>{
                     null
                 ))
             }
-            {pages_number>5 ? 
-                <div className={styles.pagination}>
-                    <span onClick={()=>set_active_page(prevIndex=> prevIndex>0 ? prevIndex-1 : 0)} className={styles.prev_page_btn} ><BsChevronDoubleLeft className={styles.prev_btn_icon}/></span>
-                    {foods_pagination.map((page,index)=>(
-                        index+1<=5 ? <span key={index} onClick={()=>set_active_page(index)} className={`${styles.page_btn_more_than_5} ${index==active_page ? styles.active_page_btn : null}`}>{index+1}</span> : null 
-                        ))}
-                    <span onClick={()=>set_active_page(prevIndex=> prevIndex<5 ? prevIndex+1 : 5)} className={`${styles.next_page_btn} ${active_page>4 ? styles.active_page_btn : null}`}><BsChevronDoubleRight className={styles.next_btn_icon}/></span>
-                </div>
-                :pages_number>1 ? 
-                <div className={styles.pagination}>
-                    {foods_pagination.map((page,index)=>(
-                    <span key={index} onClick={()=>set_active_page(index)} className={`${styles.page_btn_less_than_5} ${index==active_page ? styles.active_page_btn : null}`}>{index+1}</span>    
-                    ))}
-                </div>
-                : null
-                
-            }
+            <Pagination active_page={active_page} set_active_page={set_active_page} pages_number={pages_number} pages={foods_pagination} />
         </div>
     )
 }

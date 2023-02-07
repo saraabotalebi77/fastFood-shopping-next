@@ -21,8 +21,12 @@
     font-size : 2rem;
 }
 .close_form_icon{
-    font-weight : bold;
+    color : #71819e;
     cursor : pointer;
+    transition : color 0.4s;
+}
+.close_form_icon:hover{
+    color : var(--primary-color);
 }
 .edit_info_user_input{
     outline : none;

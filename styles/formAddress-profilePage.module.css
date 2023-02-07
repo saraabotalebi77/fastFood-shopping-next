@@ -1,0 +1,64 @@
+.form_address{
+    width : 50%;
+    border-radius : 1rem;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--white-color);
+    padding : 3rem 2rem;
+    display: flex;
+    flex-direction : column;
+    gap : 1.5rem;
+}
+.title_close_icon_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color : var(--primary-color);
+}
+.title_address{
+    font-size : 2rem;
+}
+.close_icon{
+    color : #71819e;
+    cursor : pointer;
+    transition : color 0.4s;
+}
+.close_icon:hover{
+    color : var(--primary-color);
+}
+.input_form_address,
+.textarea_form_address{
+    outline : none;
+    border : none;
+    border-radius : 0.4rem;
+    padding : 1.2rem 1rem;
+    color : var(--primary-color);
+    font-family: "Vazir","bangers";
+    box-shadow :2px 2px 4px #e2e2e2 inset,-2px -2px 4px #f3f2f2 inset;
+    transition: box-shadow 0.5s ;
+}
+.textarea_form_address{
+    resize: none;
+}
+.input_form_address:focus,
+.textarea_form_address:focus{
+    box-shadow : 1px 1px 0px #e2e2e2 inset,-1px -1px 0px #f3f2f2 inset;
+}
+.input_form_address::placeholder,
+.textarea_form_address::placeholder{
+    color : rgb(131, 131, 131);
+}
+.create_edit_btn_form_address_wrapper{
+    display: flex;
+    flex-direction: row-reverse;
+}
+@media (max-width:576px){
+    .edit_info_user_form{
+        width : 80%;
+    }
+    .title_edit_info_user_form{
+        font-size : 1.5rem;
+    }
+}

@@ -1,0 +1,62 @@
+.orders_pagination,
+.transactions_pagination{
+    width : 100%;
+    margin-bottom : 2rem;
+}
+.responsive_table{
+    width : 100%;
+    overflow-x: auto;
+}
+.responsive_table::-webkit-scrollbar {
+    height : 5px;
+}
+.responsive_table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius : 0.5rem;
+}
+.responsive_table::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius : 0.5rem;
+}
+.table{
+    max-width : 850px;
+    min-width : 850px;
+    margin : auto;
+    border-collapse: collapse;
+    font-size : 1.5rem;
+}
+.thead_table tr{
+    border-bottom : 1px solid var(--primary-color)
+}
+.tbody_table tr{
+    border-bottom : 1px solid rgb(240,240,240);
+}
+.thead_table tr th{
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+}
+.tbody_table tr td{
+    text-align : center;
+    padding-top : 0.3rem;
+    padding-bottom : 0.3rem;
+}
+.btn_show_ordered_foods{
+    border : none;
+    outline : none;
+    font-family : "Vazir";
+    padding : 0.7rem 1.5rem;
+    border-radius : 0.5rem;
+    cursor : pointer;
+    color : var(--white-color);
+    background-color : var(--secondary-color);
+}
+.pagination_wrapper{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:576px){
+    .orders_pagination,
+    .transactions_pagination{
+        width : 100%;
+    }
+}

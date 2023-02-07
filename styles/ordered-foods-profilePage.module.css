@@ -1,0 +1,73 @@
+.ordered_foods_wrapper{
+    width : 50%;
+    background-color : var(--white-color);
+    border-radius : 1rem;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform : translate(-50%,-50%);
+}
+.ordered_foods_title_wrapper{
+    width : 95%;
+    margin : auto;
+    padding-top : 1.5rem;
+    padding-bottom : 1.5rem;
+    border-bottom  : 1px solid rgb(240,240,240);
+    color : var(--primary-color);
+    font-size : 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items : center;
+}
+.close_icon{
+    color : #71819e;
+    cursor : pointer;
+    transition : color 0.4s;
+}
+.close_icon:hover{
+    color : var(--primary-color);
+}
+.responsive_table{
+    width : 95%;
+    overflow: auto;
+    margin :  auto;
+    margin-bottom : 1rem;
+}
+.responsive_table::-webkit-scrollbar {
+    height : 5px;
+}
+.responsive_table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius : 0.5rem;
+}
+.responsive_table::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius : 0.5rem;
+}
+.table{
+    width : 100%;
+    min-width : 550px;
+    border-collapse: collapse;
+    font-size : 1.5rem;
+}
+.thead_table tr{
+    border-bottom : 1px solid var(--primary-color)
+}
+.tbody_table tr{
+    border-bottom : 1px solid rgb(240,240,240);
+}
+.thead_table tr th{
+    padding-top : 1rem;
+    padding-bottom : 1rem;
+}
+.tbody_table tr td{
+    text-align : center;
+}
+.image_food{
+   margin-top : 0.7rem;
+}
+@media (max-width:576px) {
+    .ordered_foods_wrapper{
+        width : 95%;
+    }
+}

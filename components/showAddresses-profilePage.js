@@ -51,7 +51,7 @@ const AddressesUser = ()=>{
                         <span className={styles.address_user}>{address.address}</span>
                     </div>
                     <div className={styles.btn_edit_wrapper}>
-                        <button className={styles.btn_edit} onClick={()=>sedit_address_btn_handler(address.id)}>ویرایش</button>
+                        <button className={styles.btn_edit} onClick={()=>edit_address_btn_handler(address.id)}>ویرایش</button>
                     </div>
                 </div>
             ))}

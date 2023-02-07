@@ -1,8 +1,8 @@
-const Orders = ()=>{
-    return(
-        <div>
+import Orders from "components/orders-profilePage";
 
-        </div>
+const OrdersPage = ()=>{
+    return(
+        <Orders/>
     )
 }
-export default Orders;
+export default OrdersPage;

@@ -58,7 +58,8 @@
     background-color : var(--secondary-color-01);
 }
 .create_address_btn_wrapper{
-    text-align:left;
+    display: flex;
+    justify-content: left;
 }
 .create_address_btn{
     padding : 0.8rem 1.2rem;
@@ -74,8 +75,12 @@
 @media (max-width:576px){
     .addresses_wrapper{
         margin-right : 0;
+        flex-direction : column-reverse;
     }
     .address_container{
         font-size : 1.4rem;
+    }
+    .create_address_btn{
+        flex-grow : 1;
     }
 }

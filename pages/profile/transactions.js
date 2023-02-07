@@ -1,8 +1,8 @@
-const Transaction = ()=>{
+import Transaction from "components/transaction-profilePage";
+
+const TransactionPage = ()=>{
     return(
-        <div>
-            
-        </div>
+        <Transaction/>
     )
 }
-export default Transaction;
+export default TransactionPage;
