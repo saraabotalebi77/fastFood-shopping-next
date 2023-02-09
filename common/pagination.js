@@ -8,7 +8,7 @@ const Pagination = ({active_page,set_active_page,pages_number,pages})=>{
                 {pages.map((page,index)=>(
                     index+1<=5 ? <span key={index} onClick={()=>set_active_page(index)} className={`${styles.page_btn_more_than_5} ${index==active_page ? styles.active_page_btn : null}`}>{index+1}</span> : null 
                     ))}
-                <span onClick={()=>set_active_page(prevIndex=> prevIndex<pages.length ? prevIndex+1 : pages.length-1)} className={`${styles.next_page_btn} ${active_page>4 ? styles.active_page_btn : null}`}><BsChevronDoubleRight className={styles.next_btn_icon}/></span>
+                <span onClick={()=>set_active_page(prevIndex=> prevIndex<pages.length-1 ? prevIndex+1 : pages.length-1)} className={`${styles.next_page_btn} ${active_page>4 ? styles.active_page_btn : null}`}><BsChevronDoubleRight className={styles.next_btn_icon}/></span>
             </div>
         )
     }

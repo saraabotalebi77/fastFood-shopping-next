@@ -1,0 +1,55 @@
+.aboutus_wrapper{
+    width : 85%;
+    padding-top : 8rem;
+    padding-bottom : 8rem;
+    margin : auto;
+}
+.aboutus_title{
+    font-size : 3rem;
+    margin-bottom : 2rem;
+}
+.aboutus,
+.whats_fastfood p,
+.why_fastfood p{
+    text-align: justify;
+}
+.aboutus,
+.whats_fastfood,
+.why_fastfood,
+.advantage_fastfood,
+.address_fastfood,
+.phoneNumber_fastfood,
+.woking_time{
+    margin-bottom : 1.8rem;
+    font-size : 1.5rem;
+}
+.whats_fastfood p,
+.why_fastfood p,
+.address_fastfood address,
+.woking_time p,
+.phoneNumber_fastfood p{
+    text-indent: 2rem;
+}
+.whats_fastfood h3,
+.why_fastfood h3,
+.advantage_fastfood h3,
+.address_fastfood h3,
+.phoneNumber_fastfood h3,
+.woking_time h3{
+    font-size : 1.8rem;
+}
+.advantage_fastfood_menu{
+    padding-right : 2rem;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+.advantage_fastfood_menu_list_item{
+   padding-top : 0.4rem;
+   padding-bottom : 0.4rem;
+}
+@media (max-width:768px){
+    .aboutus_wrapper{
+        width : 90%;
+    }
+    
+}

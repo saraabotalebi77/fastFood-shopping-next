@@ -1,7 +1,6 @@
 import styles from 'styles/showAddresses-profilePage.module.css';
 import {Addresses} from 'data/data.js';
 import {BsXLg} from "react-icons/bs";
-import Button from 'common/button';
 import { useState } from 'react'; 
 import FormAddress from './formAddress-profilePage';
 const AddressesUser = ()=>{

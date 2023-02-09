@@ -70,7 +70,7 @@ main{
   backdrop-filter: blur(5px);
   pointer-events: none;
   opacity : 0;
-  transition : opacity 0.4s;
+  transition : opacity 0.5s;
 }
 .active-pop-up{
   opacity : 1;
